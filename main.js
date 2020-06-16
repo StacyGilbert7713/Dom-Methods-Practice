@@ -1,10 +1,9 @@
-  
 const mainElement = document.querySelector('body')
 
-const removeButton = document.createElement('button')
-let buttonText = document.createTextNode('Do NOT click!!!')
-removeButton.append(buttonText)
-mainElement.append(removeButton)
+const remove = document.createElement('button')
+let button = document.createTextNode('Do NOT click!!!')
+remove.append(button)
+mainElement.append(remove)
 
 const cuteKitten = document.createElement('img')
 cuteKitten.src = "https://thecatsite.com/attachments/scottish-fold-kitten-jpg.261816/"
@@ -18,7 +17,7 @@ let videoText = document.createTextNode('Click here for More Kitties!')
 crazyCats.append(videoText)
 mainElement.append(crazyCats)
 
-removeButton.addEventListener("click", function() {
+remove.addEventListener("click", function() {
     alert ('Bye-Bye! Toodles! Farewell! You clicked the Button, you lose the cuteness!!!!')
     mainElement.remove()
 })
