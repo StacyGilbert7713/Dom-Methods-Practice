@@ -23,5 +23,5 @@ mainElement.append(crazyCats)
 
 remove.addEventListener("click", function() {
     alert ('Bye-Bye! Toodles! Farewell! You clicked the Button, you lose the cuteness!!!!')
-    bodyElement.remove()
+    mainElement.remove()
 })
